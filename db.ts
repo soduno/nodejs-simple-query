@@ -16,7 +16,7 @@ export default class Db {
   }
 
   private connector() {
-    return postgres({
+    return postgres({//probably a good idea to use env
       host: 'localhost',
       port: 5432,
       database: 'db',
